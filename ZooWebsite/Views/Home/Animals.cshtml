@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-18" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Animals</title>
+    <link rel="stylesheet" href="css/StyleSheet.css">
+</head>
+<body style="background-color:deepskyblue">
+    <h1>Zoo Webpage</h1>
+    <h2>Animals page</h2>
+    <nav>
+        <ul>
+            <li><a asp-action="Index">Home page</a></li>
+            <li><a asp-action="Tickets">Tickets page</a></li>
+            <li><a asp-action="Animals">Animals page</a></li>
+            <li><a asp-action="DirectionsToZoo">Directions to zoo page</a></li>
+            <li><a asp-action="AboutUs">About us page</a></li>
+        </ul>
+    </nav>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#birds">Birds</a></li>
+                <li><a href="#reptiles">Reptiles</a></li>
+                <li><a href="#mammals">Mammals</a></li>
+                <li><a href="#exotic">Exotic</a></li>
+            </ul>
+        </nav>
+        <img src="/images/animals.jpg" alt="Animal photo" width="300" height="300"/>
+        <p>This content will be retrieved from a database
+            depending on which of the above list gets selected.</p>
+    </div>
+</body>
+</html>
